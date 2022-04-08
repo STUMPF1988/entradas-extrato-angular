@@ -16,6 +16,7 @@ export class NovaTransferenciaComponent {
   //destino: number = 222; para dar um valor inicial
   destino: number;
 
+  //no constructor colocamos se há uma injeção de dependencia, neste caso para ser feita a transferencia, precisamos chamar a API através do componente TRansferencia Service
   constructor(private service: TransferenciaService, private router: Router){};
 
   transferir() {

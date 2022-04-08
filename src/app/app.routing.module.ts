@@ -1,3 +1,4 @@
+import { ContadorComponent } from './contador/contador.component';
 import { ExtratoComponent } from './extrato/extrato.component';
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
@@ -8,7 +9,8 @@ import { NovaTransferenciaComponent } from './nova-transferencia/nova-transferen
 export const routes: Routes = [
   {path: '', redirectTo: 'extrato', pathMatch: 'full'},
   {path: 'extrato', component: ExtratoComponent},
-  {path: 'nova-transferencia', component: NovaTransferenciaComponent}
+  {path: 'nova-transferencia', component: NovaTransferenciaComponent},
+  {path: 'contador', component: ContadorComponent}
 
 ]
 

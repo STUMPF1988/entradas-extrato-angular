@@ -9,11 +9,12 @@ import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app.routing.module';
+import { ContadorComponent } from './contador/contador.component';
 
 registerLocaleData(localePt, 'pt');
 
 @NgModule({
-  declarations: [AppComponent, NovaTransferenciaComponent, ExtratoComponent],
+  declarations: [AppComponent, NovaTransferenciaComponent, ExtratoComponent, ContadorComponent],
   imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt' },

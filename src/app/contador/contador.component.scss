@@ -1,0 +1,32 @@
+h2 {
+  background-color: white;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.botao-wrapper {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.botao {
+  background-color: var(--primary);
+  color: white;
+  display: block;
+  flex: 1;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 0.5em;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &--cancelar {
+    background-color: var(--secondary);
+    margin-left: 20px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
